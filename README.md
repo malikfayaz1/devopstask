@@ -48,9 +48,13 @@ we have some commands i already discuss this in videos:
 
 Videos: 
 Part 1 = https://www.loom.com/share/03323e598d1d4405bb6124f57a9ff693
+
 part 2 = https://www.loom.com/share/ced18649df65483383002c9edd40090e
+
 part 3 = https://www.loom.com/share/29fb8039d3d54fb3ad671aa4d9e1568b
+
 part 4 = https://www.loom.com/share/b3ac0be23506446abbb8ef7c5153382e
+
 part 5 = https://www.loom.com/share/8384da86ad2048858347b2eeafa77d3e
 
 
