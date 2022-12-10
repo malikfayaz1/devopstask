@@ -1,6 +1,6 @@
 # DevOps-technical-task
 
-# This terraform code contain :
+ This terraform code contain :
     VPC and subnets:
     Setup dedicated subnets across all availability zones in the region.
     Public subnets - for Internet facing services
@@ -9,9 +9,9 @@
     Elasticache subnets
     intra subnets - private subnets with NO Internet routing 
 
-# We have Provider AWS which is define in init.tf fine where we also define that teraform will grater then version 0.15.
+ We have Provider AWS which is define in init.tf fine where we also define that teraform will grater then version 0.15.
 
-# We define VPC  Module source from terraformaws-modules/vpc/aws 
+We define VPC  Module source from terraformaws-modules/vpc/aws 
     Inside VPC we define Private and public subnets on spesific ip address
     like 10.101.0.0/16 for dev
     and 10.102.0.0/16 for production as per recomendation
@@ -19,14 +19,14 @@
     for S3 we also have one module tf-2-s3.tf where our env will be provisioned for log bucket , flow logs , log delivery, and we also have implementation of versioning.
 
 
-# Tf-3-eks file i setup source , clustername, it is using t3.medium  instance type and using our VPC , public and private subnets. for now i am using 1 node and max size will also be 1 but we can we can provision it by changing the values 
+ Tf-3-eks file i setup source , clustername, it is using t3.medium  instance type and using our VPC , public and private subnets. for now i am using 1 node and max size will also be 1 but we can we can provision it by changing the values 
 
-# eks_node_desired_size        = 1
-# eks_node_min_size            = 1
-# eks_node_max_size            = 1
+eks_node_desired_size        = 1
+eks_node_min_size            = 1
+eks_node_max_size            = 1
 
-# our availability  Zone is  define in tfvars file 
-# azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+our availability  Zone is  define in tfvars file 
+azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
 
 We have same approach for our Prod environments as well
 
